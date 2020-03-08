@@ -60,7 +60,7 @@ getnum:
         sll $t0,$t0,2 # binary system: 1 -> 1, shift 2 bits -> 100 -> 4
         la $t1,num_offset
         add $t0,$t0,$t1        
-        lw $t0,($t0) # value 7 for 1, value 15 for 2
+        lw $t0,($t0) # value 7 for 1, value 14 for 2
         
         la $t1,num     # t1 Value is the first address in M
         add $a0,$t0,$t1 # a0 is the address of string for $v0 = 4
